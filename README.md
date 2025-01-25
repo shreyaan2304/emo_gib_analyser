@@ -104,10 +104,11 @@ This command will start the Streamlit server, and the UI will open in your defau
 #### **Text Analysis Tab**
 - Provides a user interface to input text for analysis.
 - Users can enter text into the input box and click the "Analyze" button.
-- The text is sent to the server using a POST request, and the analysis results are retrieved using a GET request.
+- The text is sent to the server using a POST request, and the analysis results are returned.
 - The results include emotion scores and gibberish detection, which are displayed on the UI.
 
 #### **Database Tab**
+- The database is accessed through a GET request from the server.
 - Displays the database contents with various filters to facilitate convenient analysis.
 - Users can view the complete log of inputs and outputs of the model.
 - Filters allow users to narrow down the data based on specific criteria, making it easier to analyze trends and patterns.
