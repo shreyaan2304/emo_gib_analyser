@@ -1,0 +1,28 @@
+services:
+  api:
+    build:
+      context: ./api  # Build from the api/ directory
+    ports:
+      - "8000:8000"  # Expose port 8000 for the API
+    volumes:
+      - ./database/logs.db:/app/logs.db  # Mount the SQLite database file
+    networks:
+      - mynetwork
+    environment:
+      - DATABASE_URL=sqlite:///app/logs.db  # SQLite path inside the container
+
+  ui:
+    build:
+      context: ./ui  # Build from the ui/ directory
+    ports:
+      - "8501:8501"  # Expose port 8501 for Streamlit
+    depends_on:
+      - api  # Ensure api starts first
+    networks:
+      - mynetwork
+    environment:
+      - API_URL=http://api:8000  # Point to the API service inside the network
+
+networks:
+  mynetwork:
+    driver: bridge

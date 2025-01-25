@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+transformers
+pydantic
+pandas
+torch>=2.0.0

@@ -1,0 +1,9 @@
+streamlit
+plotly
+matplotlib
+fastapi
+uvicorn
+transformers
+torch
+pydantic
+os
