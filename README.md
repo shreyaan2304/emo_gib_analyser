@@ -21,7 +21,14 @@ This project is a full-stack application designed to analyze the emotional tone 
 ### 🐳 Docker Run
 Follow these steps to set up and run the application using Docker:
 
-#### **Step 1: Build and Start the Application**
+#### **Step 1: Clone the Repository**
+Clone the project repository to your local machine and navigate into the project directory:
+```
+git clone https://github.com/shreyaan2304/emo_gib_analyser.git
+cd emo_gib_analyser
+```
+
+#### **Step 2: Build and Start the Application**
 Use Docker Compose to build and start the application:
 
 ```bash
@@ -31,11 +38,11 @@ docker-compose up
 
 This will build the Docker images and start the containers for the backend and frontend services.
 
-#### **Step 2: Access the Application**
+#### **Step 3: Access the Application**
 The FastAPI backend will be available at http://0.0.0.0:8000.
 The Streamlit frontend will be available at http://0.0.0.0:8501.
 
-#### **Step 3: Stop the Application**
+#### **Step 4: Stop the Application**
 To stop the application and remove the containers, run:
 ```
 docker-compose down
@@ -47,9 +54,10 @@ Follow these steps to set up and run the application locally:
 #### **Step 1: Clone the Repository**
 Clone the project repository to your local machine and navigate into the project directory:
 ```
-git clone <repository_url>
-cd <repository_directory>
+git clone https://github.com/shreyaan2304/emo_gib_analyser.git
+cd emo_gib_analyser
 ```
+
 
 Replace <repository_url> with the actual URL of the repository and <repository_directory> with the name of the directory created by cloning the repository.
 
