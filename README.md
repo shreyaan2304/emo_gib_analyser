@@ -25,15 +25,19 @@ Use Docker Compose to build and start the application:
 ```bash
 docker-compose build
 docker-compose up
+```
+
 This will build the Docker images and start the containers for the backend and frontend services.
 
 Step 2: Access the Application
 The FastAPI backend will be available at http://0.0.0.0:8000.
 The Streamlit frontend will be available at http://0.0.0.0:8501.
+
 Step 3: Stop the Application
 To stop the application and remove the containers, run:
-
+```
 docker-compose down
+```
 Run Locally
 Follow these steps to set up and run the application locally:
 
